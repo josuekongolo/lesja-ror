@@ -1,0 +1,547 @@
+/* ===================================
+   Lesja Rør AS - Responsive Styles
+   Mobile-first approach
+   =================================== */
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 var(--space-xl);
+    }
+}
+
+/* Desktop (1024px - 1199px) */
+@media (max-width: 1199px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: var(--space-xl);
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+    :root {
+        --container-padding: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .section {
+        padding: var(--space-3xl) 0;
+    }
+
+    /* Header */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        flex-direction: column;
+        padding: var(--space-lg);
+        box-shadow: var(--shadow-lg);
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin-bottom: var(--space-sm);
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: var(--space-md);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .header .container {
+        position: relative;
+    }
+
+    /* Hero */
+    .hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Why Us */
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hytteservice Highlight */
+    .hytteservice-highlight {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .hytteservice-image {
+        order: -1;
+    }
+
+    /* Service Area */
+    .service-area {
+        grid-template-columns: 1fr;
+    }
+
+    /* Credentials */
+    .credentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service Detail */
+    .service-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-sidebar {
+        position: static;
+    }
+
+    /* About */
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro-image {
+        order: -1;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    /* Hytteservice Services */
+    .hytteservice-services {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) {
+    :root {
+        --container-padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    /* Top Bar */
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-bar-contact {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    /* Header */
+    .logo-text h1 {
+        font-size: 1.25rem;
+    }
+
+    .logo-text span {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: var(--space-3xl) 0;
+    }
+
+    .hero h1 {
+        font-size: 1.875rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Credentials */
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA Section */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Form */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-checkboxes {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    /* Values */
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Service Area List */
+    .service-area-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: var(--space-3xl) 0;
+    }
+
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+        font-size: 0.75rem;
+    }
+
+    /* Pricing Box */
+    .pricing-box {
+        padding: var(--space-lg);
+    }
+
+    .pricing-list li {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+
+    /* Why Us */
+    .why-us-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .why-us-icon {
+        margin: 0 auto;
+    }
+
+    /* Service Card */
+    .service-card {
+        padding: var(--space-lg);
+    }
+
+    /* Hytteservice Card */
+    .hytteservice-card {
+        padding: var(--space-lg);
+    }
+
+    /* Emergency Box */
+    .emergency-box .phone {
+        font-size: 1.5rem;
+    }
+
+    /* Contact Items */
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-item-icon {
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Small (max-width: 575px) */
+@media (max-width: 575px) {
+    :root {
+        --container-padding: 0.875rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.375rem;
+    }
+
+    .hero h1 {
+        font-size: 1.625rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: var(--space-md) var(--space-lg);
+        font-size: 0.9375rem;
+    }
+
+    .btn--large {
+        padding: var(--space-md) var(--space-xl);
+        font-size: 1rem;
+    }
+
+    /* Logo */
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Service Card Icon */
+    .service-card-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-card-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Footer Certifications */
+    .footer-certifications {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Contact Form */
+    .contact-form-wrapper {
+        padding: var(--space-lg);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: var(--space-sm) var(--space-md);
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-gray: #333333;
+        --color-gray-light: #666666;
+    }
+
+    .service-card,
+    .why-us-item,
+    .credential-item,
+    .hytteservice-card {
+        border: 2px solid var(--color-dark);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .top-bar,
+    .header,
+    .footer,
+    .nav-toggle,
+    .btn,
+    .hero-image,
+    .service-sidebar,
+    .contact-form-wrapper {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    h1, h2, h3, h4 {
+        color: #000;
+        page-break-after: avoid;
+    }
+
+    .section {
+        padding: 20pt 0;
+        page-break-inside: avoid;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    a[href^="tel:"]::after,
+    a[href^="mailto:"]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .service-card:hover,
+    .why-us-item:hover {
+        transform: none;
+    }
+
+    .btn {
+        min-height: 48px;
+    }
+
+    .nav-menu a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero {
+        padding: var(--space-xl) 0;
+    }
+
+    .page-header {
+        padding: var(--space-xl) 0;
+    }
+}
+
+/* Dark Mode Support (Future Enhancement) */
+@media (prefers-color-scheme: dark) {
+    /* Reserved for dark mode implementation */
+}
